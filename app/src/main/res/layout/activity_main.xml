@@ -38,8 +38,8 @@
         android:layout_height="@dimen/dimen_size_30dp"
         android:background="@drawable/shape_box"
         android:ellipsize="end"
-        android:singleLine="true"
         android:gravity="center"
+        android:singleLine="true"
         app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
         app:layout_constraintRight_toLeftOf="@id/tv_second_older_string"
         app:layout_constraintTop_toBottomOf="@id/tv_older_strings" />
@@ -50,8 +50,8 @@
         android:layout_height="@dimen/dimen_size_30dp"
         android:background="@drawable/shape_box"
         android:ellipsize="end"
-        android:singleLine="true"
         android:gravity="center"
+        android:singleLine="true"
         app:layout_constraintLeft_toRightOf="@id/tv_first_older_string"
         app:layout_constraintRight_toLeftOf="@id/tv_third_older_string"
         app:layout_constraintTop_toBottomOf="@id/tv_older_strings" />
@@ -62,8 +62,8 @@
         android:layout_height="@dimen/dimen_size_30dp"
         android:background="@drawable/shape_box"
         android:ellipsize="end"
-        android:singleLine="true"
         android:gravity="center"
+        android:singleLine="true"
         app:layout_constraintLeft_toRightOf="@id/tv_second_older_string"
         app:layout_constraintRight_toRightOf="@id/guidelineEnd"
         app:layout_constraintTop_toBottomOf="@id/tv_older_strings" />
@@ -87,8 +87,8 @@
         android:layout_height="@dimen/dimen_size_30dp"
         android:background="@drawable/shape_box"
         android:ellipsize="end"
-        android:singleLine="true"
         android:gravity="center"
+        android:singleLine="true"
         app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
         app:layout_constraintRight_toLeftOf="@id/tv_second_recent_string"
         app:layout_constraintTop_toBottomOf="@id/tv_recent_strings" />
@@ -99,8 +99,8 @@
         android:layout_height="@dimen/dimen_size_30dp"
         android:background="@drawable/shape_box"
         android:ellipsize="end"
-        android:singleLine="true"
         android:gravity="center"
+        android:singleLine="true"
         app:layout_constraintLeft_toRightOf="@id/tv_first_recent_string"
         app:layout_constraintRight_toRightOf="@id/guidelineEnd"
         app:layout_constraintTop_toBottomOf="@id/tv_recent_strings" />

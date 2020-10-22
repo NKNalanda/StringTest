@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View) {
-        when(view.id) {
+        when (view.id) {
             binding?.btnSubmit?.id -> {
                 addToStack()
                 binding?.etEnterString?.setText("")
