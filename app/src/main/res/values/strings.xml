@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">StringTest</string>
+    <string name="older_strings">Older strings</string>
+    <string name="recent_strings">Recent strings</string>
+    <string name="enter_string">Enter string</string>
+    <string name="submit">Submit</string>
+</resources>

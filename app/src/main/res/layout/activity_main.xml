@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/text_size_16sp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/text_size_16sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_older_strings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_size_10dp"
+        android:text="@string/older_strings"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_first_older_string"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_size_30dp"
+        android:background="@drawable/shape_box"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toLeftOf="@id/tv_second_older_string"
+        app:layout_constraintTop_toBottomOf="@id/tv_older_strings" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_second_older_string"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_size_30dp"
+        android:background="@drawable/shape_box"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/tv_first_older_string"
+        app:layout_constraintRight_toLeftOf="@id/tv_third_older_string"
+        app:layout_constraintTop_toBottomOf="@id/tv_older_strings" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_third_older_string"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_size_30dp"
+        android:background="@drawable/shape_box"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/tv_second_older_string"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        app:layout_constraintTop_toBottomOf="@id/tv_older_strings" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_recent_strings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_size_10dp"
+        android:text="@string/recent_strings"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_older_string" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_first_recent_string"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_size_30dp"
+        android:background="@drawable/shape_box"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toLeftOf="@id/tv_second_recent_string"
+        app:layout_constraintTop_toBottomOf="@id/tv_recent_strings" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_second_recent_string"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_size_30dp"
+        android:background="@drawable/shape_box"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/tv_first_recent_string"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        app:layout_constraintTop_toBottomOf="@id/tv_recent_strings" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_enter_string"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_size_50dp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_recent_string">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_enter_string"
+            style="@style/EditTextBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_string"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_submit"
+        style="@style/StyleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_size_10dp"
+        android:backgroundTint="@color/purple_700"
+        android:elevation="@dimen/dimen_size_5dp"
+        android:text="@string/submit"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        app:layout_constraintTop_toBottomOf="@id/til_enter_string" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
